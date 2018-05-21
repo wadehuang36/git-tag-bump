@@ -1,0 +1,50 @@
+{
+  "name": "git-tag-bump",
+  "version": "0.0.0-PLACEHOLDER",
+  "description": "A CLI tool for using git tag for semver and increasing it",
+  "main": "index.js",
+  "bin": {
+    "git-tag-bump": "./index.js",
+    "gtb": "./index.js"
+  },
+  "scripts": {
+    "clean": "rimraf ./build",
+    "start": "ts-node ./src/index.ts",
+    "build": "npm run clean && gulp build",
+    "local": "npm run clean && gulp local",
+    "debug": "npm run clean && node --inspect-brk=9229 -r ts-node/register ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wadehuang36/git-tag-bump.git"
+  },
+  "keywords": [
+    "cli",
+    "bump",
+    "git-tag"
+  ],
+  "author": "Wade Huang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wadehuang36/git-tag-bump/issues"
+  },
+  "homepage": "https://github.com/wadehuang36/git-tag-bump#readme",
+  "dependencies": {
+    "inquirer": "^5.2.0",
+    "semver": "^5.5.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/cli-spinner": "^0.2.0",
+    "@types/inquirer": "0.0.41",
+    "@types/node": "^10.0.6",
+    "@types/semver": "^5.5.0",
+    "@types/yargs": "^11.0.0",
+    "gulp": "^4.0.0",
+    "gulp-replace": "^1.0.0",
+    "rimraf": "^2.6.2",
+    "ts-node": "^6.0.3",
+    "typescript": "^2.8.3"
+  }
+}

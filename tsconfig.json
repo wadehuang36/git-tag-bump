@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "rootDir": "./",
+        "outDir": "./build",
+        "sourceMap": false,
+        "declaration": false,
+        "lib": [
+            "es2017"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "strict": true,
+        "strictNullChecks": false,
+        "target": "es2017"
+    },
+    "exclude": [
+        "build",
+    ]
+}
