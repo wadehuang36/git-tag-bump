@@ -85,7 +85,7 @@ function fetchVersion() {
             }
 
             let arr = stdout.split("/")
-            currentVersion = arr[arr.length - 1];
+            currentVersion = arr[arr.length - 1].trim();
             resolve(currentVersion)
         });
     })
